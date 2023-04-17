@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>assignment2.problem1</OriginalElement>
+  <nodes>
+    <node x="1390.0" y="864.0">assignment2.problem1.Shampoo</node>
+    <node x="2209.593137254902" y="1136.0">assignment2.problem1.Order</node>
+    <node x="1786.5" y="775.0">assignment2.problem1.Customer</node>
+    <node x="276.0" y="434.0">assignment2.problem1.Grocery</node>
+    <node x="1597.6519607843138" y="-14.0">assignment2.problem1.Product</node>
+    <node x="1002.0" y="864.0">assignment2.problem1.PaperTowel</node>
+    <node x="1730.125" y="401.0">assignment2.problem1.ShoppingCart</node>
+    <node x="-76.0" y="864.0">assignment2.problem1.Salmon</node>
+    <node x="1189.093137254902" y="445.0">assignment2.problem1.HouseHold</node>
+    <node x="289.0" y="864.0">assignment2.problem1.Cheese</node>
+    <node x="2039.5" y="720.0">assignment2.problem1.Inventory</node>
+    <node x="2504.5" y="720.0">assignment2.problem1.Receipt</node>
+    <node x="-76.0" y="1369.0">assignment2.problem1.OnlineShoppingApp</node>
+    <node x="653.9999999999999" y="864.0">assignment2.problem1.Beer</node>
+    <node x="2108.0" y="390.0">assignment2.problem1.StockItem</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="assignment2.problem1.Salmon" target="assignment2.problem1.Grocery" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.0" />
+      <point x="96.5" y="698.0" />
+      <point x="461.5" y="698.0" />
+      <point x="0.0" y="94.0" />
+    </edge>
+    <edge source="assignment2.problem1.Customer" target="assignment2.problem1.ShoppingCart" relationship="TO_ONE">
+      <point x="-58.25" y="-127.0" />
+      <point x="1844.75" y="698.0" />
+      <point x="1858.968137254902" y="698.0" />
+      <point x="1858.968137254902" y="688.0" />
+      <point x="1799.375" y="688.0" />
+      <point x="-69.25" y="127.0" />
+    </edge>
+    <edge source="assignment2.problem1.Receipt" target="assignment2.problem1.Product" relationship="TO_MANY">
+      <point x="0.0" y="-182.0" />
+      <point x="2720.5" y="369.0" />
+      <point x="2262.0" y="369.0" />
+      <point x="2262.0" y="359.0" />
+      <point x="1794.1519607843138" y="359.0" />
+      <point x="65.5" y="171.0" />
+    </edge>
+    <edge source="assignment2.problem1.Cheese" target="assignment2.problem1.Grocery" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.0" />
+      <point x="0.0" y="94.0" />
+    </edge>
+    <edge source="assignment2.problem1.Inventory" target="assignment2.problem1.StockItem" relationship="TO_MANY">
+      <point x="111.25" y="-182.0" />
+      <point x="2373.25" y="698.0" />
+      <point x="2339.0" y="698.0" />
+      <point x="77.0" y="138.0" />
+    </edge>
+    <edge source="assignment2.problem1.Beer" target="assignment2.problem1.Grocery" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.0" />
+      <point x="817.9999999999999" y="698.0" />
+      <point x="461.5" y="698.0" />
+      <point x="0.0" y="94.0" />
+    </edge>
+    <edge source="assignment2.problem1.Order" target="assignment2.problem1.Receipt" relationship="CREATE">
+      <point x="75.75" y="-94.0" />
+      <point x="2436.843137254902" y="1115.0" />
+      <point x="2828.5" y="1115.0" />
+      <point x="108.0" y="182.0" />
+    </edge>
+    <edge source="assignment2.problem1.Customer" target="assignment2.problem1.ShoppingCart" relationship="CREATE">
+      <point x="58.25" y="-127.0" />
+      <point x="1961.25" y="698.0" />
+      <point x="1937.875" y="698.0" />
+      <point x="69.24999999999994" y="127.0" />
+    </edge>
+    <edge source="assignment2.problem1.Order" target="assignment2.problem1.Customer" relationship="TO_ONE">
+      <point x="-75.75" y="-94.0" />
+      <point x="2285.343137254902" y="1115.0" />
+      <point x="1915.2622549019607" y="1115.0" />
+      <point x="1915.2622549019607" y="1105.0" />
+      <point x="1903.0" y="1105.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="assignment2.problem1.ShoppingCart" target="assignment2.problem1.Product" relationship="TO_MANY">
+      <point x="-5.6843418860808015E-14" y="-127.0" />
+      <point x="1868.625" y="369.0" />
+      <point x="2262.0" y="369.0" />
+      <point x="2262.0" y="359.0" />
+      <point x="1794.1519607843138" y="359.0" />
+      <point x="65.5" y="171.0" />
+    </edge>
+    <edge source="assignment2.problem1.Inventory" target="assignment2.problem1.StockItem" relationship="CREATE">
+      <point x="-111.25" y="-182.0" />
+      <point x="2150.75" y="698.0" />
+      <point x="2185.0" y="698.0" />
+      <point x="-77.0" y="138.0" />
+    </edge>
+    <edge source="assignment2.problem1.StockItem" target="assignment2.problem1.Product" relationship="TO_ONE">
+      <point x="0.0" y="-138.0" />
+      <point x="2262.0" y="359.0" />
+      <point x="1794.1519607843138" y="359.0" />
+      <point x="65.5" y="171.0" />
+    </edge>
+    <edge source="assignment2.problem1.Grocery" target="assignment2.problem1.Product" relationship="GENERALIZATION">
+      <point x="92.75" y="-94.0" />
+      <point x="554.25" y="359.0" />
+      <point x="1377.593137254902" y="359.0" />
+      <point x="1377.593137254902" y="349.0" />
+      <point x="1663.1519607843138" y="349.0" />
+      <point x="-65.5" y="171.0" />
+    </edge>
+    <edge source="assignment2.problem1.Order" target="assignment2.problem1.Receipt" relationship="TO_ONE">
+      <point x="-75.75" y="-94.0" />
+      <point x="2285.343137254902" y="1115.0" />
+      <point x="1915.2622549019607" y="1115.0" />
+      <point x="1915.2622549019607" y="1105.0" />
+      <point x="2612.5" y="1105.0" />
+      <point x="-108.0" y="182.0" />
+    </edge>
+    <edge source="assignment2.problem1.PaperTowel" target="assignment2.problem1.HouseHold" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.0" />
+      <point x="1186.0" y="698.0" />
+      <point x="1372.593137254902" y="698.0" />
+      <point x="0.0" y="83.0" />
+    </edge>
+    <edge source="assignment2.problem1.Order" target="assignment2.problem1.ShoppingCart" relationship="TO_ONE">
+      <point x="-75.75" y="-94.0" />
+      <point x="2285.343137254902" y="1115.0" />
+      <point x="1915.2622549019607" y="1115.0" />
+      <point x="1915.2622549019607" y="1105.0" />
+      <point x="1776.0" y="1105.0" />
+      <point x="1776.0" y="698.0" />
+      <point x="1858.968137254902" y="698.0" />
+      <point x="1858.968137254902" y="688.0" />
+      <point x="1799.375" y="688.0" />
+      <point x="-69.25" y="127.0" />
+    </edge>
+    <edge source="assignment2.problem1.HouseHold" target="assignment2.problem1.Product" relationship="GENERALIZATION">
+      <point x="91.75" y="-83.0" />
+      <point x="1464.343137254902" y="359.0" />
+      <point x="1377.593137254902" y="359.0" />
+      <point x="1377.593137254902" y="349.0" />
+      <point x="1663.1519607843138" y="349.0" />
+      <point x="-65.5" y="171.0" />
+    </edge>
+    <edge source="assignment2.problem1.Shampoo" target="assignment2.problem1.HouseHold" relationship="GENERALIZATION">
+      <point x="2.2737367544323206E-13" y="-38.0" />
+      <point x="1568.5" y="698.0" />
+      <point x="1372.593137254902" y="698.0" />
+      <point x="0.0" y="83.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.35714285714285715" showDependencies="true" x="3021.4" y="1200.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
